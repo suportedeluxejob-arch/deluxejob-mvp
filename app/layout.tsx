@@ -24,8 +24,47 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "DeLuxe Isa",
-  description: "Plataforma premium de conteúdo exclusivo",
+  title: {
+    default: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+    template: "%s | DeLuxe Isa",
+  },
+  description:
+    "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com níveis Bronze, Prata, Gold, Platinum e Diamante. Conteúdo personalizado e experiência VIP.",
+  keywords: [
+    "conteúdo exclusivo",
+    "plataforma premium",
+    "criadoras de conteúdo",
+    "assinatura",
+    "conteúdo VIP",
+    "DeLuxe Isa",
+  ],
+  authors: [{ name: "DeLuxe Isa" }],
+  creator: "DeLuxe Isa",
+  publisher: "DeLuxe Isa",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com",
+    siteName: "DeLuxe Isa",
+    title: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+    description:
+      "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com níveis Bronze, Prata, Gold, Platinum e Diamante.",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com"}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+    description: "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com experiência VIP.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com"}/og-image.png`],
+    creator: "@deluxeisa",
+  },
   generator: "v0.app",
   manifest: "/manifest.json",
   themeColor: "#ec4899",
@@ -35,9 +74,13 @@ export const metadata: Metadata = {
     title: "DeLuxe Isa",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.png", sizes: "any" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+    ],
     shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 }
 
