@@ -25,8 +25,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
-    template: "%s | DeLuxe Isa",
+    default: "DeLuxe - Plataforma Premium de Conteúdo Exclusivo",
+    template: "%s | DeLuxe",
   },
   description:
     "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com níveis Bronze, Prata, Gold, Platinum e Diamante. Conteúdo personalizado e experiência VIP.",
@@ -36,17 +36,17 @@ export const metadata: Metadata = {
     "criadoras de conteúdo",
     "assinatura",
     "conteúdo VIP",
-    "DeLuxe Isa",
+    "DeLuxe",
   ],
-  authors: [{ name: "DeLuxe Isa" }],
-  creator: "DeLuxe Isa",
-  publisher: "DeLuxe Isa",
+  authors: [{ name: "DeLuxe" }],
+  creator: "DeLuxe",
+  publisher: "DeLuxe",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com",
-    siteName: "DeLuxe Isa",
-    title: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+    siteName: "DeLuxe",
+    title: "DeLuxe - Plataforma Premium de Conteúdo Exclusivo",
     description:
       "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com níveis Bronze, Prata, Gold, Platinum e Diamante.",
     images: [
@@ -54,24 +54,24 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com"}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+        alt: "DeLuxe - Plataforma Premium de Conteúdo Exclusivo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DeLuxe Isa - Plataforma Premium de Conteúdo Exclusivo",
+    title: "DeLuxe - Plataforma Premium de Conteúdo Exclusivo",
     description: "Acesse conteúdos exclusivos das suas criadoras favoritas. Plataforma premium com experiência VIP.",
     images: [`${process.env.NEXT_PUBLIC_APP_URL || "https://deluxeisa.com"}/og-image.png`],
     creator: "@deluxeisa",
   },
-  generator: "v0.app",
+  generator: "deluxeisa",
   manifest: "/manifest.json",
   themeColor: "#ec4899",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "DeLuxe Isa",
+    title: "DeLuxe",
   },
   icons: {
     icon: [
